@@ -504,25 +504,6 @@
                 </plugin>
 
                 <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>xml-maven-plugin</artifactId>
-                    <version>1.0.2</version>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>validate</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                    <configuration>
-                        <catalogs>
-                            <catalog>${rootlocation}/mq/.jakartaee-catalog.xml</catalog>
-                        </catalogs>
-                        <catalogHandling>strict</catalogHandling>
-                    </configuration>
-                </plugin>
-
-                <plugin>
                     <groupId>org.glassfish.copyright</groupId>
                     <artifactId>glassfish-copyright-maven-plugin</artifactId>
                     <version>2.4</version>
@@ -594,22 +575,6 @@
                 </executions>
             </plugin>
 
-            <plugin>
-                <artifactId>maven-enforcer-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>enforce-rules</id>
-                        <goals>
-                            <goal>enforce</goal>
-                        </goals>
-                        <configuration>
-                            <rules>
-                                <requirePluginVersions/>
-                            </rules>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
     <profiles>
