@@ -5,3 +5,4 @@ pom.xml.versionsBackup
 ### Other ###
 *.class
 
+mq/distribution/.flattened-pom.xml
